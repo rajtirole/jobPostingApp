@@ -1,0 +1,207 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 5vw 2vw 5vw;
+    width: 100%;
+    min-height: 70%;
+    max-height: 80%;
+    gap: 1rem;
+    margin-top: 2rem;
+    
+   
+
+
+}
+.searchbox{
+   width: 100%;
+    min-height: 20%;
+    display: flex;
+    box-shadow: 0px 0px 22px 4px #FF202040;
+    padding: 2vw 5vw 2vw 5vw;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    border: 1.8px solid #E3E3E3;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+.search input{
+    outline: none;
+    width: 100%;
+    border: none;
+}
+.searchbox div>img{
+    height: 20px;
+}
+.skillsbox{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+.skills{
+    display: flex;
+    gap: 1rem;
+}
+.box1{
+   color: #ffff;
+border-radius: 10px;
+background-color: #ED5353;
+border-radius: 10px;
+padding: 10px 5px;
+border: none;
+font-weight: 700;
+
+}
+.box2{
+   color: #ED5353;
+border-radius: 10px;
+background-color: #ffff;
+font-weight: 700;
+border-radius: 10px;
+padding: 10px 5px;
+border: none;
+
+}
+.box3 select{
+    color: #9C9C9C;
+    font-weight: 700;
+    border: 2px solid #9C9C9C;
+    border-radius: 10px;
+    padding: 10px 5px;
+
+}
+.skill{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+.skill>div{
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+   
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #FFEEEE;
+}
+.skill>div>div:nth-child(2){
+    background-color: #FF6B6B;
+}
+.skill>div>div{
+    padding: 10px 5px;
+    border-radius: 0 10px 10px 0px;
+}
+.jobs{
+    margin-top: 2rem;
+    width: 100%;
+    min-height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}   
+.job{
+    box-shadow: 0px 0px 22px 4px #FF202040;
+    padding: 4vw 5vw 4vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.job:hover{
+    border-left:5px solid #FF0000;
+}
+.leftSideContainer{
+    display: flex;
+    gap: 2rem;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.leftSideContainer>div>img{
+    border-radius: 10px;
+    height: 3rem;
+    width: 3rem;    
+    padding-top: 2vh;
+}
+.box5{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box5>h2{
+    font-weight: 700;
+    font-size: larger;
+}
+.box5>div{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.box5>.box7 div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #9C9C9C;
+    flex-wrap: wrap;
+}
+.box5>.box7>div>img{
+    height: 1rem;
+    width: auto;
+}
+.box8{
+    color: #ED5353;
+
+}
+.rightSideContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+.box9{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.box9>div{
+    font-weight: 700;
+    font-size: large;
+    background-color: #FFEEEE;
+    border-radius: 3px;
+    padding: 2px 10px;
+
+}
+.rightSideContainer>div>button{
+    background-color: #ED5353;
+    color: #ffff;
+    font-weight: 700;
+    font-size: small;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px;
+}
+.skillsbox>button{
+    color: #ffff;
+    border-radius: 10px;
+    background-color: #ED5353;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 5px;
+    border: none;
+}
