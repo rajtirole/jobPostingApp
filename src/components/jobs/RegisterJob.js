@@ -123,7 +123,7 @@ const RegisterJob = () => {
                                         let options = {
                                           method: "POST",
                                           headers: { "content-type": "application/json" },
-                                        
+                                        url:`${Backend_URL}/job/createJob`,
                                           withCookies:true,
                                           withCredentials:true,
                                           data:{
@@ -132,9 +132,7 @@ const RegisterJob = () => {
                                           
                                         };
                                         // axios()
-                                       const data=await axios.post(`${Backend_URL}/job/createJob`,{withCredentials:true,data:{
-                                        companyName:form.name,title:form.job,description:form.description,jobType:form.type,logoUrl:form.logo,salary:form.salary,location:form.location,locationType:form.remote,aboutcompany:form.aboutCompany,duration:form.duration,about:form.information,skills:form.skills
-                                      }})
+                                       const data=await axios(options)
                                        console.log(data.data.success);
                                        if(data?.data?.success){
                                         // //  setresponse((prev)=>{
