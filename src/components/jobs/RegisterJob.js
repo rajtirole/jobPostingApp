@@ -5,7 +5,9 @@ import image1 from '../../assets/Group 12.png'
 import axios from 'axios'
 import { Backend_URL } from '../../constant'
 import { useNavigate } from 'react-router-dom'
+import { withCookies } from 'react-cookie'
 const RegisterJob = () => {
+    axios.defaults.withCredentials = true;
     const navigate=useNavigate()
     const [form,setform]=useState({name:'',logo:'',job:'',salary:'',type:'',location:'',description:'',aboutCompany:'',skills:[],information:'',remote:'',duration:''})
     const [skill,setskill]=useState('')
@@ -120,15 +122,17 @@ const RegisterJob = () => {
                                       try {
                                         let options = {
                                           method: "POST",
-                                          headers: { "content-type": "application/x-www-form-urlencoded" },
-                                          url:`${Backend_URL}/job/createJob`,
-                                          withCredentials: true,
+                                          headers: { "content-type": "application/json" },
+                                        
+                                          withCookies:true,
+                                          withCredentials:true,
                                           data:{
                                             companyName:form.name,title:form.job,description:form.description,jobType:form.type,logoUrl:form.logo,salary:form.salary,location:form.location,locationType:form.remote,aboutcompany:form.aboutCompany,duration:form.duration,about:form.information,skills:form.skills
                                           }
                                           
                                         };
-                                       const data=await axios(options)
+                                        axios()
+                                       const data=await axios(`${Backend_URL}/job/createJob`,options)
                                        console.log(data.data.success);
                                        if(data?.data?.success){
                                         // //  setresponse((prev)=>{
