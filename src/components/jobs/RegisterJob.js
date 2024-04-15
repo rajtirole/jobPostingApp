@@ -132,7 +132,9 @@ const RegisterJob = () => {
                                           
                                         };
                                         axios()
-                                       const data=await axios(`${Backend_URL}/job/createJob`,options)
+                                       const data=await axios(`${Backend_URL}/job/createJob`,{withCredentials:true,data:{
+                                        companyName:form.name,title:form.job,description:form.description,jobType:form.type,logoUrl:form.logo,salary:form.salary,location:form.location,locationType:form.remote,aboutcompany:form.aboutCompany,duration:form.duration,about:form.information,skills:form.skills
+                                      }})
                                        console.log(data.data.success);
                                        if(data?.data?.success){
                                         // //  setresponse((prev)=>{
