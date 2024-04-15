@@ -192,7 +192,7 @@ const JobSearch = ({isSignedIn=false,response,setresponse}) => {
                            })
                            console.log(response?.jobidd);
                            console.log(data);
-                           localStorage.setItem('jobsearch',JSON.stringify(response.jobidd))
+                           localStorage.setItem('jobsearch',JSON.stringify(data?.data?.data))
                           console.log(JSON.parse(localStorage.getItem('jobsearch')));
                            navigate('/jobpage')
                         }
